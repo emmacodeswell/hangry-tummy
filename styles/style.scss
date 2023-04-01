@@ -175,6 +175,45 @@ header .wrapper {
     flex: 0 0 50%;
 }
 
+// Styling dessert section
+
+.dessert {
+    background-color: $lightGrey;
+    
+    h2 {
+        color: $deepOrange;
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    a {
+        font-family: $mont;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background-color: white;
+        border: $deepOrange 3px solid;
+        padding: 10px;
+        text-decoration: none;
+        color: black; 
+
+        &:hover {
+                color: white;
+                background-color: $deepOrange;
+            }
+        }
+    }
+
+.dessert .wrapper {
+    display: flex;
+}
+
 
 
 
