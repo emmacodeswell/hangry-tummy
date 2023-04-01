@@ -1,0 +1,203 @@
+@use "./partials/setup";
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+// == VARIABLES ==
+
+// colors
+$deepOrange: #E75605;
+$darkGrey: #1F2022;
+$lightGrey: #EEEEEE;
+$white: #fff;
+
+// text style
+$mont: 'Montserrat', sans-serif;
+$cat: 'Catamaran', sans-serif;
+
+// MY CODE
+
+// General styling
+
+html {
+    font-family: $cat;
+    font-size: 125%;
+    /* 20px default */
+    line-height: 1.15;
+    color: #000000;
+    background-color: $white;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// Styling Header
+
+header .wrapper {
+    // height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+
+.textContainer {
+    display: flex;
+    margin-top: 200px;
+    align-items: flex-start;
+}
+
+.textContainer h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 145px;
+    font-family: $mont;
+    font-weight: 600;
+    color: $deepOrange;
+}
+
+.imageContainer {
+    display: flex;
+    max-height: 100%;
+    width: auto;
+}
+
+// Styling top nav
+
+.top-nav {
+    height: 10vh;
+    max-width: 100%;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav li {
+    display: flex;
+    margin: 40px 20px 20px 20px;
+    padding: 10px;
+}
+
+.top-nav li a {
+    font-family: $mont;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $darkGrey;
+}
+
+.top-nav li a:hover {
+    color: $deepOrange;
+}
+
+// Styling sidebar
+
+.sidebar a {
+    color: $deepOrange;
+}
+
+.sidebar {
+    margin: 30px 50px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+}
+
+// Styling about section
+
+.about {
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        color: $deepOrange;
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    a {
+        font-family: $mont;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background-color: white;
+        border: $deepOrange 3px solid;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: white;
+            background-color: $deepOrange;
+        }
+    }
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.textContainerAbout {
+    row-gap: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    text-align: left;
+
+    > * {
+        margin: 0 15%;
+    }
+}
+
+.imgContainer {
+    display: flex;
+    flex: 0 0 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
