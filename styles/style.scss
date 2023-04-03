@@ -72,23 +72,23 @@ header .wrapper {
 
 // Styling top nav
 
-.top-nav {
+.mainNav {
     height: 10vh;
     max-width: 100%;
 }
 
-.top-nav ul {
+.mainNav ul {
     display: flex;
     justify-content: center;
 }
 
-.top-nav li {
+.mainNav li {
     display: flex;
     margin: 40px 20px 20px 20px;
     padding: 10px;
 }
 
-.top-nav li a {
+.mainNav li a {
     font-family: $mont;
     font-weight: 500;
     text-decoration: none;
@@ -96,7 +96,7 @@ header .wrapper {
     color: $darkGrey;
 }
 
-.top-nav li a:hover {
+.mainNav li a:hover {
     color: $deepOrange;
 }
 
