@@ -1,0 +1,14 @@
+@use './variables' as *;
+
+@media (min-width: $phone) {
+    .spaceBetween {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        row-gap: 1rem;
+    
+        > * {
+            margin: 0 !important;
+        }
+    }
+}

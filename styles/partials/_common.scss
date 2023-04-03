@@ -193,17 +193,6 @@ header {
     padding-bottom: 6rem;
 }
 
-.spaceBetween {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    row-gap: 1rem;
-
-    > * {
-        margin: 0 !important;
-    }
-}
-
 // Styling links section
 .links {
     display: flex;
