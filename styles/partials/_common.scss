@@ -1,0 +1,267 @@
+@use './variables' as *;
+
+// General styling
+html {
+    font-family: $cat; // TODO: DRY THIS SHIT UP
+    font-size: 125%; // 20px default
+    line-height: 1.15;
+    color: #000000;
+    background-color: $white;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &.col2 {
+        > * {
+            flex: 0 0 50%;
+            width: 50%;
+        }
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+// Styling Header
+header {
+    background-image: url(../assets/header-burger.png);
+    background-repeat: no-repeat;
+    height: 800px;
+
+    .wrapper {
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+}
+
+.hero {
+    display: flex;
+    margin-top: 200px;
+    margin-left: auto;
+    width: 50%;
+    align-items: flex-start;
+    align-self: flex-start;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 145px;
+        font-family: $mont;
+        font-weight: 600;
+        color: $deepOrange;
+    }
+}
+
+.imageContainer {
+    display: flex;
+    max-height: 100%;
+    width: auto;
+}
+
+// Styling navs
+.mainNav {
+    height: 5vh;
+    max-width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        display: flex;
+        margin: 40px 20px;
+        padding: 10px;
+    }
+
+    li a {
+        font-family: $mont;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $darkGrey;
+
+        &:hover {
+            color: $deepOrange;
+        }
+    }
+}
+
+// Styling sidebar
+.sidebar {
+    margin: 30px 50px;
+
+    a {
+            color: $deepOrange;
+        }
+
+    ul li {
+        font-size: 30px;
+        padding: 15px;
+    }
+}
+
+// Styling general content
+.content {
+    h2 {
+        font-family: $mont;
+        color: $deepOrange;
+        font-weight: bold;
+        font-size: 42px;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 1rem 0;
+    }
+
+    a {
+        display: block;
+        width: max-content;
+        font-family: $mont;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: $deepOrange 3px solid;
+        padding: 10px;
+        margin: 1rem 0;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: white;
+            background-color: $deepOrange;
+        }
+    }
+
+    form {
+        display: flex;
+
+        > * {
+            margin: 0 !important;
+        }
+
+        input {
+            padding: 10px 30px;
+            width: 450px;
+            border: white 3px solid;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+            &::placeholder {
+                color: black;
+                opacity: 0.5;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.textContainer {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.imgContainer {
+    display: flex;
+}
+
+// Styling dessert section
+.dessert {
+    display: flex;
+    background-color: $lightGrey;
+    column-gap: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.spaceBetween {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+
+    > * {
+        margin: 0 !important;
+    }
+}
+
+// Styling links section
+.links {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: $deepOrange;
+    text-transform: uppercase;
+    padding: 8.5rem 0;
+    text-align: center;
+    column-gap: 1rem;
+
+    a {
+        display: flex;
+        flex-flow: column nowrap;
+        white-space: nowrap;
+        font-family: $mont;
+        font-weight: bold;
+        font-size: 42px;
+        text-decoration: none;
+        padding: 2rem;
+        color: white;
+    }
+
+    i {
+        margin-bottom: 1.5rem;
+        font-size: 70px;
+    }
+}
+
+// Styling gallery section
+.gallery {
+    text-align: center;
+    margin: 4rem 0;
+
+    .wrapper {
+        justify-content: center;
+        column-gap: 3rem;
+        margin: 4rem 0;
+    }
+}
+
+// Styling footer
+footer {
+    background-color: $lightGrey;
+
+    .wrapper {
+        justify-content: space-evenly;
+        margin: 4rem 0;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: $lightGrey;
+        background-color: #1F2022;
+        line-height: 1.5;
+        margin: 0;
+        padding: 15px 0px;
+    }
+}
