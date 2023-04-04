@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-// Media queries
+// == Media Queries == //
 
 @media (max-width: $phone) {
     .wrapper {
@@ -9,8 +9,8 @@
         &.col2 {
             > * {
                 flex: 0 0 auto;
-                width: 100%;
                 flex-flow: column wrap;
+                width: 100%;
 
                 &.textContainer {
                     order: 2;
@@ -38,18 +38,18 @@
             }
 
             input {
-                width: auto;
                 text-align: center;
+                width: auto;
             }
         }
     }
 
     .textContainer {
+        text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        text-align: center;
     }
 
     header .mainNav,
@@ -65,22 +65,22 @@
 
     .hero {
         justify-content: flex-end;
+        width: auto;
         margin-top: 100px;
         margin-right: 1.5rem;
-        width: auto;
 
         h1 {
-            font-size: 65px;
             flex: 0 0 0;
+            font-size: 65px;
         }
     }
 
     .dessert {
+        flex-flow: column;
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 3rem;
         padding-bottom: 2rem;
-        flex-flow: column;
     }
 
     .links {
@@ -108,14 +108,15 @@
             width: 50%;
 
             img {
-                width: 100%;
                 display: block;
+                width: 100%;
+            }
+
+            &:last-child {
+                display: none;
             }
         }
 
-        li:last-child {
-            display: none;
-        }
     }
 
     .mainNav {
